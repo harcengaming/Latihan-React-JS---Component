@@ -9,7 +9,7 @@ import Navigasi from './component/Navigasi';
 
 function App() {
 
-  const [ambilProduct, setAmbilProduct] = useState(["Intip", "Dawet", "Mie"])
+  const [ambilProduct] = useState(["Intip", "Dawet", "Mie"])
 
   return (
     <div className="App">

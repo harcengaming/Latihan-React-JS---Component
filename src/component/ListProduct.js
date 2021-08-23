@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-{/* state array of object */}
+/* state array of object */
 
 function ListProduct() {
 
@@ -38,4 +38,4 @@ function ListProduct() {
 }
 
 export default ListProduct;
-{/* lakukan maping pada state lalu tampilkan ProductItem serta berikan props */}
+/* lakukan maping pada state lalu tampilkan ProductItem serta berikan props */

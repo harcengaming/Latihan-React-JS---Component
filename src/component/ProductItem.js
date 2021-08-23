@@ -1,4 +1,4 @@
-{/* menerima props dari ListProduct */}
+/* menerima props dari ListProduct */
 function ProductItem({ambilProduct}) {
   console.log(ambilProduct);
 
