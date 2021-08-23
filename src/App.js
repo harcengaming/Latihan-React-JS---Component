@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
+import { useState } from "react";
+import ListProduct from './component/ListProduct';
+import ProductItem from "./component/ProductItem";
+import Navigasi from './component/Navigasi';
+
+
+
 function App() {
+
+  const [ambilProduct, setAmbilProduct] = useState(["Intip", "Dawet", "Mie"])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navigasi />
+
+      <ListProduct />
+
+      {/* <ProductItem /> */}
+
+      {ambilProduct.map((item, index) => (
+          <ProductItem ambilProduct={item} key={index} />
+      ))} 
+
+      <footer>
+        <span>by Harcen Gaming</span>
+      </footer>
+
     </div>
   );
 }

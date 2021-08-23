@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+#productItem {
+  background-color: violet;
+  margin: 0px 30px 0px 30px;
+  padding: 5px 0px 5px 0px;
+}
+
+.Intip {
+  background-color: tomato;
+  margin: 30px 30px 0px 30px;
+  padding: 20px 0px 20px 0px;
+}
+
+.Dawet {
+  background-color: blue;
+  margin: 0px 30px 0px 30px;
+  padding: 20px 0px 20px 0px;
+}
+
+.Mie {
+  background-color: orange;
+  margin: 0px 30px 30px 30px;
+  padding: 20px 0px 20px 0px;
+}
+
+.navigasi ul li {
+  list-style: none;
+}
+
+footer {
+  background-color: red;
+  color: white;
+  margin: 0px 30px 30px 30px;
+  padding: 20px 0px 20px 0px;
+}
