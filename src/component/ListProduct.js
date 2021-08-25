@@ -1,38 +1,52 @@
 import React, { useState } from 'react';
 
+import ProductItem from './ProductItem';
 /* state array of object */
 
 function ListProduct() {
+    const [count, setCount] = useState(0);
 
-    const [listProduct, setListProduct] = useState(0);
-    const [listProduct2, setListProduct2] = useState(0);
-    const [listProduct3, setListProduct3] = useState(0);
+    const [listProduct, setListProduct] = useState( [
+            {
+                nama: "Intip Goreng",
+                stok: 35, 
+            }, 
+            { 
+                nama: "Dawet Ayu",
+                stok: 16,
+            }, 
+            { 
+                nama: "Mie Ongklok",
+                stok: 7,
+            },
+        ]);
+    // const [nama, setNama] = useState("Nasi gono");
+
+    // const [stok, setStok] = useState(Number);
     // const onClick = () => {
-    //     setListProduct((c => Math.max(c - 1, 0)));
+    //     setListProduct( (c => Math.max( c - 1, 0 )) );
     //   };
     //   const onClick2 = () => {
-    //     setListProduct(c => c + 1);
+    //     setListProduct( c => c + 1 );
     //   };
-  
+        
     return (
         <div>
             <article className="Intip">
-                <h3>Intip Goreng : {listProduct} buah</h3>
-                <button onClick={ () => setListProduct( (c => Math.max(c - 1, 0))) }>Kurangi</button>
-                <button onClick={ () => setListProduct( c => c + 1 ) }>Tambahan</button>
-            </article>
-            
-            <article className="Dawet">
-                <h3>Dawet Ayu : {listProduct2} buah</h3>
-                <button onClick={ () => setListProduct2( (c => Math.max(c - 1, 0))) }>Kurangi</button>
-                <button onClick={ () => setListProduct2( c => c + 1 ) }>Tambahan</button>
-            </article>
+                
+                <h1>Menmpilkan data arry of object</h1>
+                <ProductItem productProps={listProduct} key={setListProduct}/>
 
-            <article className="Mie">
-                <h3>Mie Ongklok : {listProduct3} buah</h3>
-                <button onClick={ () => setListProduct3((c => Math.max(c - 1, 0))) }>Kurangi</button>
-                <button onClick={ () => setListProduct3( c => c + 1 ) }>Tambahan</button>
+                {listProduct.map((item, Number) => (
+                <ProductItem listProduct={item} key={Number} />
+                ))} 
+
+                <h3>{count}</h3>
+                <button onClick={ () => setCount( (c => Math.max(c - 1, 0))) }>-</button>
+                <button onClick={ () => setCount( c => c + 1 ) }>+</button>
+
             </article>
+           
         </div>
     );
 }

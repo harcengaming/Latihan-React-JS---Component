@@ -1,10 +1,12 @@
+// import ListProduct from './ListProduct';
+
 /* menerima props dari ListProduct */
-function ProductItem({ambilProduct}) {
-  console.log(ambilProduct);
+const ProductItem = ({ productProps }) => {
+  console.log(productProps);
 
     return (
       <div id="productItem">
-        <h3>{ambilProduct}</h3>
+        {/* <h3>{productProps.nama}</h3> */}
       </div>
     )
   }
