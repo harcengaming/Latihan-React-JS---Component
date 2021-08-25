@@ -6,7 +6,7 @@ const ProductItem = ({ productProps }) => {
 
     return (
       <div id="productItem">
-        {/* <h3>{productProps.nama}</h3> */}
+        <h2>{productProps}</h2>
       </div>
     )
   }

@@ -38,9 +38,12 @@
 }
 
 #productItem {
-  background-color: violet;
+  background-color: darkslategray;
   margin: 0px 30px 0px 30px;
   padding: 5px 0px 5px 0px;
+  color: white;
+  font-size: x-large;
+  text-transform: capitalize;
 }
 
 .Intip {

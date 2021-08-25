@@ -1,5 +1,4 @@
 import './App.css';
-
 import ListProduct from './component/ListProduct';
 import Navigasi from './component/Navigasi';
 

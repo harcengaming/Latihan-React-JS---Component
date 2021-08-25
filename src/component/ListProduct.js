@@ -20,7 +20,6 @@ function ListProduct() {
                 stok: 7,
             },
         ]);
-    // const [nama, setNama] = useState("Nasi gono");
 
     // const [stok, setStok] = useState(Number);
     // const onClick = () => {
@@ -29,18 +28,24 @@ function ListProduct() {
     //   const onClick2 = () => {
     //     setListProduct( c => c + 1 );
     //   };
-        
+
     return (
         <div>
             <article className="Intip">
                 
                 <h1>Menmpilkan data arry of object</h1>
-                <ProductItem productProps={listProduct} key={setListProduct}/>
 
-                {listProduct.map((item, Number) => (
-                <ProductItem listProduct={item} key={Number} />
+                <ProductItem productProps={listProduct[0].nama} type={setListProduct}/>
+                <ProductItem productProps={listProduct[0].stok} type={setListProduct}/>
+                <ProductItem productProps={listProduct[1].nama} type={setListProduct}/>
+                <ProductItem productProps={listProduct[1].stok} type={setListProduct}/>
+                <ProductItem productProps={listProduct[2].nama} type={setListProduct}/>
+                <ProductItem productProps={listProduct[2].stok} type={setListProduct}/>
+
+                {listProduct.map((item, stok) => (
+                <ProductItem listProduct={item} key={stok} />
                 ))} 
-
+                
                 <h3>{count}</h3>
                 <button onClick={ () => setCount( (c => Math.max(c - 1, 0))) }>-</button>
                 <button onClick={ () => setCount( c => c + 1 ) }>+</button>
