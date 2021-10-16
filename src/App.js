@@ -1,6 +1,7 @@
 import './App.css';
-import ListProduct from './component/ListProduct';
-import Navigasi from './component/Navigasi';
+import Content from './components/Content';
+import Navigasi from './components/Navigasi';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -9,11 +10,9 @@ function App() {
 
       <Navigasi />
 
-      <ListProduct />
+      <Content />
 
-      <footer>
-        <span>by Harcen Gaming</span>
-      </footer>
+      <Footer />
 
     </div>
   );
